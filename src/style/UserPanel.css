@@ -1,0 +1,26 @@
+.user-panel-container {
+  background: #eef0f4;
+  border: 1px solid #bfc5cb;
+  border-radius: 12px;
+  padding: 22px 18px;
+  margin: 24px 10px;
+  min-width: 220px;
+  font-family: Vazirmatn, Tahoma, sans-serif;
+  direction: rtl;
+}
+
+.user-panel-container h3 {
+  font-size: 17px;
+}
+
+.logout-btn {
+  width: 100%;
+  background: #fa5252;
+  color: #fff;
+  border: none;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: 14px;
+}

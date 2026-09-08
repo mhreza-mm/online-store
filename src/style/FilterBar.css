@@ -1,0 +1,162 @@
+.market-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* دیگر نیازی به float نیست چون Navbar با flex کنترل می‌شود */
+.right-align {
+    float: none;
+}
+
+/* دکمه اصلی فیلتر */
+.market-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+
+    padding: 7px 14px;
+    min-height: 36px;
+
+    background-color: #0f172a;
+    color: #e5e7eb;
+
+    border: 1px solid #334155;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+    user-select: none;
+
+    transition: all 0.2s ease;
+}
+
+/* آیکون کنار فیلتر */
+.filter-icon {
+    font-size: 12px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+/* حالت هاور دکمه فیلتر */
+.market-title:hover {
+    background-color: #1e293b;
+    border-color: #475569;
+}
+
+/* وقتی موس روی کل منو است */
+.market-menu:hover .market-title {
+    background-color: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+
+/* چرخش فلش هنگام باز شدن منو */
+.market-menu:hover .filter-icon {
+    transform: rotate(180deg);
+}
+
+/* منوی کشویی */
+.filter-dropdown {
+    position: absolute;
+
+    top: 100%;
+    right: 0;
+
+    min-width: 520px;
+    min-height: 220px;
+
+    background-color: rgba(15, 23, 42, 0.96);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(71, 85, 105, 0.9);
+    border-radius: 12px;
+
+    padding: 26px 28px;
+
+    display: none;
+    z-index: 1000;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* نمایش با Hover */
+.market-menu:hover .filter-dropdown {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* ستون‌های فیلتر */
+.filter-section {
+    flex: 1;
+    min-width: 140px;
+}
+
+/* عنوان ستون‌ها */
+.filter-section h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 14px 0;
+    color: #f1f5f9;
+}
+
+/* لیست‌ها */
+.filter-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* آیتم‌های فیلتر */
+.filter-section li {
+    cursor: pointer;
+    font-size: 14px;
+
+    padding: 9px 8px;
+    margin-bottom: 4px;
+
+    border-radius: 6px;
+
+    transition: all 0.2s ease;
+    color: #cbd5e1;
+}
+
+/* هاور آیتم‌ها */
+.filter-section li:hover {
+    color: #60a5fa;
+    background-color: #1e293b;
+}
+
+/* آیتم انتخاب شده */
+.filter-section li.active {
+    color: #60a5fa;
+    background-color: #1e293b;
+    font-weight: bold;
+}
+
+/* دکمه حذف فیلترها */
+.clear-filters-btn {
+    align-self: flex-start;
+
+    padding: 9px 16px;
+    background-color: #dc3545;
+    color: #fff;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-size: 13px;
+    white-space: nowrap;
+
+    transition: background-color 0.2s ease;
+}
+
+.clear-filters-btn:hover {
+    background-color: #bb2d3b;
+}

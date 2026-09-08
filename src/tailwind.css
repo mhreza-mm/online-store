@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Legacy component selectors are kept in one Tailwind entrypoint to preserve
+   the existing visual design during the utility-class migration. */
+@import "./style/App.css";
+@import "./style/CartPage.css";
+@import "./style/CheckoutPage.css";
+@import "./style/FilterBar.css";
+@import "./style/LoginRegister.css";
+@import "./style/Navbar.css";
+@import "./style/OtpStyle.css";
+@import "./style/Pagination.css";
+@import "./style/ProductDetails.css";
+@import "./style/ProductList.css";
+@import "./style/ProguctCard.css";
+@import "./style/UserPanel.css";

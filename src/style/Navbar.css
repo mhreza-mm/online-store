@@ -1,0 +1,220 @@
+/* کل navbar دو ردیف */
+.navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+    background: linear-gradient(135deg,#0b1120 0%, #111827 60%, #0f172a 100%);
+    border-bottom: 1px solid rgba(140,70,255,0.25);
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+
+/* ---------------------- */
+/* ردیف اول (بالا)        */
+/* ---------------------- */
+
+.navbar-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* لوگو */
+.navbar-right .navbar-logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+
+/* cart + login/logout */
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 50px;
+}
+
+
+/* ---------------------- */
+/* دکمه‌ها                */
+/* ---------------------- */
+
+.navbar-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 22px;
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+
+/* LOGIN */
+
+.navbar-btn.login {
+    background: linear-gradient(135deg,#6366f1,#4f46e5);
+    box-shadow: 0 4px 15px rgba(99,102,241,0.35);
+}
+
+.navbar-btn.login:hover {
+    background: linear-gradient(135deg,#7c7ff5,#5b52f0);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(99,102,241,0.45);
+}
+
+.navbar-btn.login:active {
+    transform: translateY(0) scale(0.96);
+}
+
+
+/* LOGOUT */
+
+.navbar-btn.logout {
+    background: linear-gradient(135deg,#ef4444,#dc2626);
+    box-shadow: 0 4px 15px rgba(239,68,68,0.35);
+}
+
+.navbar-btn.logout:hover {
+    background: linear-gradient(135deg,#f87171,#dc2626);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(239,68,68,0.5);
+}
+
+.navbar-btn.logout:active {
+    transform: translateY(0) scale(0.96);
+}
+
+
+/* CART */
+
+.navbar-cart {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background: linear-gradient(135deg,#6366f1,#4f46e5);
+    color: #ffffff;
+
+    padding: 10px 22px;
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    box-shadow: 0 4px 15px rgba(99,102,241,0.35);
+
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.navbar-cart:hover {
+    background: linear-gradient(135deg,#7c7ff5,#5b52f0);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(99,102,241,0.45);
+}
+
+.navbar-cart:active {
+    transform: translateY(0) scale(0.96);
+}
+
+.navbar-cart span {
+    background-color: rgba(255,255,255,0.18);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.navbar-cart::before {
+    content:'🛒';
+    font-size:1.1rem;
+}
+
+
+/* ---------------------- */
+/* ردیف دوم (جستجو)       */
+/* ---------------------- */
+
+.navbar-bottom {
+    width:100%;
+    padding:10px 14px;
+    font-size:15px;
+    margin-top:10px;
+
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:10px;
+
+    background:rgba(17,24,39,0.9);
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+
+/* input search */
+
+.navbar-bottom input {
+    width:260px;
+    padding:10px 14px;
+
+    font-size:15px;
+    font-weight:500;
+
+    color:#e5e7eb;
+
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:8px;
+
+    outline:none;
+
+    background:#0f172a;
+
+    transition:all .25s ease;
+}
+
+.navbar-bottom input::placeholder {
+    color:#9ca3af;
+}
+
+.navbar-bottom input:focus {
+    border-color:#6366f1;
+    box-shadow:0 0 10px rgba(99,102,241,0.4);
+}
+
+
+/* سرچ */
+
+.navbar-search {
+    padding:7px 10px;
+    border-radius:6px;
+
+    width:220px;
+    font-size:0.9rem;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    background:#0f172a;
+    color:#e5e7eb;
+}

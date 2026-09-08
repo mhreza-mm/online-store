@@ -1,0 +1,64 @@
+/* این بخش برای اطمینان از این است که والدها مانع نشوند */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.otp-page-wrapper {
+    position: fixed; /* ثابت نسبت به پنجره مرورگر */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e; /* رنگ تیره زمینه */
+    z-index: 9999;
+}
+
+.otp-container {
+    background: #24243e;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.otp-title {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.otp-input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    direction: ltr;
+}
+
+.otp-box {
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.otp-box:focus {
+    border-color: #646cff;
+    background: rgba(100, 108, 255, 0.1);
+    box-shadow: 0 0 10px rgba(100, 108, 255, 0.5);
+}

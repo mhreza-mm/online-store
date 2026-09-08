@@ -1,0 +1,135 @@
+.product-card {
+    background: #fffef9;
+    border: 4px solid rgba(140, 70, 255, 0.35); /* بنفش ضخیم‌تر و روشن‌تر */
+    border-radius: 14px;
+    box-shadow: 0px 2px 10px rgba(140, 70, 255, 0.15);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.25s ease;
+    max-width: 250px;
+    width: 100%;
+}
+
+/* 🔥 افکت هاور با کادر بنفش بسیار پررنگ */
+.product-card:hover {
+    transform: translateY(-5px) scale(1.04);
+
+    border-color: rgba(140, 70, 255, 0.95); /* کاملاً بنفش پررنگ */
+
+    box-shadow:
+            0 10px 25px rgba(140, 70, 255, 0.45),  /* هاله بنفش قوی */
+            0 0 12px rgba(140, 70, 255, 0.55);     /* درخشش بنفشی دور کارت */
+}
+
+.product-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+
+/* عکس محصولات */
+.product-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.product-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-align: center;
+    height: 36px;
+    overflow: hidden;
+
+    color: #4f46e5;
+    text-shadow: 0 0 6px rgba(79,70,229,0.25);
+}
+.quantity-controls span {
+    min-width: 26px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: #4f46e5;
+    letter-spacing: 0.3px;
+}
+
+
+.product-price {
+    color: #4f46e5;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+
+/* دکمه افزودن به سبد خرید */
+.product-card-add-btn {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: #ffffff;
+    border: none;
+
+    padding: 9px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+
+    transition: all 0.25s ease;
+
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35);
+}
+
+.product-card-add-btn:hover {
+    background: linear-gradient(135deg, #818cf8 0%, #4f46e5 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.55);
+}
+
+.product-card-add-btn:active {
+    transform: translateY(0px) scale(0.96);
+    box-shadow: 0 3px 10px rgba(79, 70, 229, 0.35);
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-controls button {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: #ffffff;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    box-shadow: 0 3px 8px rgba(79, 70, 229, 0.35);
+}
+
+.quantity-controls button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.5);
+}
+
+.quantity-controls span {
+    min-width: 26px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+}
