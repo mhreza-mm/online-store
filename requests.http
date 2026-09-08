@@ -1,0 +1,38 @@
+###
+GET http://localhost:8080/api/products
+Content-Type: application/json
+
+
+###
+GET http://localhost:8080/api/products/1
+Content-Type: application/json
+
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "title": "مقنعه ",
+  "price": 10,
+  "image":"https://dkstatics-public.digikala.com/digikala-products/2077971.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+
+}
+
+
+###
+PUT http://localhost:8080/api/products/1
+Content-Type: application/json
+
+{
+  "title": "Updated Product",
+  "price": 120.0,
+  "image": "https://example.com/image-updated.jpg",
+  "description": "Updated description"
+}
+
+
+###
+DELETE http://localhost:8080/api/products/1
+Content-Type: application/json
+÷
