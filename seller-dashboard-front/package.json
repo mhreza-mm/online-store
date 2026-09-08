@@ -1,0 +1,1 @@
+{"name":"seller-dashboard-front","version":"1.0.0","private":true,"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","react":"^18.3.1","react-dom":"^18.3.1","lucide-react":"latest"},"scripts":{"dev":"vite --port 3001","build":"vite build"},"devDependencies":{}}
